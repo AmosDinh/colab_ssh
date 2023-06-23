@@ -21,6 +21,7 @@ which will add needed configs to your ~/.ssh/config file for VS-Code and open a 
     "ionutvmi.path-autocomplete"
   ]
 ```
+- note the sample_colab.ipynb to see how it should look on the colab end
 
 # Colab SSH
 
