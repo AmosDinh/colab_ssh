@@ -59,7 +59,7 @@ def config_argo_tunnel(msg: str) -> Tuple[str, str, str, str]:
     msg += "---\n"
     msg += "Command to connect to the ssh server:\n"
     msg += "𓆝 𓆟 𓆞 𓆝 𓆟"*5 + "\n"
-    ssh_command = f"ssh {ssh_common_options} root@{hostname}"
+    ssh_command = f"sshcolab {hostname}"
     msg += f"{ssh_command}\n"
     msg += "𓆝 𓆟 𓆞 𓆝 𓆟"*5 + "\n"
     msg += "Or you can use the following configuration in your .ssh/config file:\n"
