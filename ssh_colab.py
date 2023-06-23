@@ -3,8 +3,8 @@ import os
 import re
 
 def main():
-    cloudflared_path =r"C:\Users\amosd\Downloads\cloudflared.exe"
-
+    cloudflared_path =os.environ['USERPROFILE']+r"\.ssh\cloudflared.exe"
+    default_open_path = '/code'
     args = sys.argv[1:]
 
     if len(args) != 1:
@@ -37,7 +37,7 @@ Host sshcolab
     with open(config_path, 'w') as f:
         f.write(new_contents)
 
-    os.system(f'code --remote ssh-remote+{user}@sshcolab')
+    os.system(f'code --remote ssh-remote+{user}@sshcolab {default_open_path}')
 
 if __name__ == '__main__':
     main()

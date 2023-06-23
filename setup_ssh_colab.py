@@ -2,7 +2,7 @@ import setuptools
 
 setuptools.setup(
     name="sshcolab",
-    version="1.1",
+    version="1.101",
     packages=setuptools.find_packages(),
     install_requires=[],
     entry_points={

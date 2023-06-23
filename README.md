@@ -3,13 +3,24 @@
 Do things described in "Colab SSH" below first.
 For faster local use on windows and vs code.
 
-change the line with the path to cloudflared.exe to your path in ssh_colab.py.
-- run ```python setup_ssh_colab.py develop```.
-- now you can run ```sshcolab your-example.trycloudflare.com```, 
+change the line with the path to cloudflared.exe to your path in ssh_colab.py. Default is Windows ssh folder %USERPROFILE%/.ssh/cloudflared.exe .
+- install the library by ```python setup_ssh_colab.py develop```
+- now you can run ```sshcolab your-example.trycloudflare.com```
 which will add needed configs to your ~/.ssh/config file for VS-Code and open a ssh connection in VS Code. 
-- The old configuration marked with  ">>> sshcolab" "<<< sshcolab" is removed
+- The old configuration in the config file, marked with  ">>> sshcolab" "<<< sshcolab", is removed automatically
 
+- In your VS Code user settings you can add something like this, to not have to install extentions again everytime:
 
+```
+  "remote.SSH.defaultExtensions": [
+    "ms-python.python",
+    "ms-toolsai.jupyter",
+    "GitHub.copilot",
+    "mechatroner.rainbow-csv",
+    "christian-kohler.path-intellisense",
+    "ionutvmi.path-autocomplete"
+  ]
+```
 
 # Colab SSH
 
