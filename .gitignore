@@ -6,3 +6,6 @@ build
 dist
 .coverage
 .coverage.*
+
+*.egg-info/
+.pylintrc

@@ -1,3 +1,16 @@
+# Amos additions
+
+Do things described in "Colab SSH" below first.
+For faster local use on windows and vs code.
+
+change the line with the path to cloudflared.exe to your path in ssh_colab.py.
+- run ```python setup_ssh_colab.py develop```.
+- now you can run ```sshcolab your-example.trycloudflare.com```, 
+which will add needed configs to your ~/.ssh/config file for VS-Code and open a ssh connection in VS Code. 
+- The old configuration marked with  ">>> sshcolab" "<<< sshcolab" is removed
+
+
+
 # Colab SSH
 
 Create SSH tunel to a running colab notebook

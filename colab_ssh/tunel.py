@@ -58,15 +58,15 @@ def config_argo_tunnel(msg: str) -> Tuple[str, str, str, str]:
 
     msg += "---\n"
     msg += "Command to connect to the ssh server:\n"
-    msg += "✂️"*24 + "\n"
+    msg += "𓆝 𓆟 𓆞 𓆝 𓆟"*5 + "\n"
     ssh_command = f"ssh {ssh_common_options} root@{hostname}"
     msg += f"{ssh_command}\n"
-    msg += "✂️"*24 + "\n"
+    msg += "𓆝 𓆟 𓆞 𓆝 𓆟"*5 + "\n"
     msg += "Or you can use the following configuration in your .ssh/config file:\n"
-    msg += "✂️"*24 + "\n"
+    msg += "𓆝 𓆟 𓆞 𓆝 𓆟"*5+ "\n"
     ssh_config = f"Host colab\n\tHostName {hostname}\n\tUser root\n\tUserKnownHostsFile /dev/null\n"
     ssh_config += "\tVisualHostKey yes\n\tStrictHostKeyChecking no\n"
     ssh_config += "\tProxyCommand cloudflared access ssh --hostname %h\n"
     msg += ssh_config
-    msg += "✂️"*24 + "\n"
+    msg += "𓆝 𓆟 𓆞 𓆝 𓆟"*5 + "\n" #✂️
     return msg, ssh_command, ssh_config, hostname
