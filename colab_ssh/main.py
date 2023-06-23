@@ -37,7 +37,7 @@ def setup_ssh(public_key: Union[str, List[str]], mattermost_webhook_address: Opt
     msg = config_ssh_server(public_key, msg)
 
     # Config other common tool and library
-    install_common_tool()
+    #install_common_tool()
 
     # Config Argo Tunnel
     msg, ssh_command, ssh_config, hostname = config_argo_tunnel(msg)

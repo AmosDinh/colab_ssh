@@ -97,7 +97,7 @@ def install_vim_tmux():
     print("Installing custom vim and tmux")
     command = """curl -L https://github.com/lamhoangtung/dotfile/raw/linux/install_vim.sh | bash
                  wget https://github.com/lamhoangtung/dotfile/raw/linux/.tmux.conf -P ~"""
-    run_command(command)
+    run_command(command) 
 
 
 def install_common_tool():
